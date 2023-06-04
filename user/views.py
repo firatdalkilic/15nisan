@@ -51,7 +51,6 @@ def userRegister(request):
                 )
                 user.save()
                 messages.success(request, 'Kullanıcı oluşturuldu')
-                print("Oluşturuldu")
                 return redirect('login')
 
     return render(request, 'register.html')
